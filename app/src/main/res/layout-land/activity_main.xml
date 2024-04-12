@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/idLayoutText"
+        android:layout_width="411dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="@string/landscapeTxt"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <EditText
+        android:id="@+id/idTextEdit"
+        android:layout_width="378dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/inputHint"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idLayoutText" />
+
+    <Button
+        android:id="@+id/idSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/submitButton"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/idTextEdit"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/idTextEdit"
+        app:layout_constraintTop_toBottomOf="@+id/idTextDisplay" />
+
+    <ImageView
+        android:id="@+id/idImage"
+        android:layout_width="289dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="100dp"
+        android:contentDescription="@string/imgDescription"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/idTextEdit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idLayoutText"
+        app:layout_constraintVertical_bias="0.933"
+        app:srcCompat="@drawable/flower" />
+
+    <TextView
+        android:id="@+id/idTextDisplay"
+        android:layout_width="378dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/idTextEdit"
+        app:layout_constraintTop_toBottomOf="@+id/idTextEdit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

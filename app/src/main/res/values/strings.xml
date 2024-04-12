@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TurningYourPhoneProject</string>
+    <string name="portraitTxt">Portrait Layout</string>
+    <string name="landscapeTxt">Landscape Layout</string>
+    <string name="imgDescription">Blue Flower</string>
+    <string name="submitButton">Submit Changes</string>
+    <string name="inputHint">Enter text here..</string>
+</resources>
